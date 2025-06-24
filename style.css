@@ -201,19 +201,20 @@ width: 40px;
 }
 @media  screen and ( min-width: 768px) {
     .container{
-        width: 100%;
-        max-width: 900px;
+        margin: 0 auto;
+        max-width: 1200px;
     }
+    
     .menu-grid{
         display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-template-columns: 300px 300px 300px;
-        gap: 30px;
+         grid-template-columns: repeat(3, 1fr) ;
+         gap: 20px;
     }
     .cart-section{
-        
-        float: right;
-        
+
+    position: sticky;
+    top: 20px; 
+     height: fit-content; 
     }
     .add-btn{
         padding: 10px;
@@ -223,3 +224,4 @@ width: 40px;
         margin-top: 40px;
     }
 }
+   
