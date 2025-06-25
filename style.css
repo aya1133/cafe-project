@@ -50,9 +50,7 @@ h1{
 .add-btn img{
     margin-right: 5px;
 }
-.desert-img:hover{
-    border: 2px solid  hsl(14, 86%, 42%);
-}
+
 .add-btn:hover{
     background-color: hsl(14, 86%, 42%);
 }
@@ -154,6 +152,30 @@ padding: 10px;
     align-items: center;
     justify-content: center;
 }
+
+.qty-btn {
+  
+   background-color:hsl(20, 50%, 98%) ;
+  border: none;
+  padding: 0px ;
+  width: 25px;
+  height: 25px;
+  margin: 0 4px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+
+.add-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+
+
 .order-confirmed{
    background-color: white;
     border-radius: 15px;
@@ -204,24 +226,31 @@ width: 40px;
         margin: 0 auto;
         max-width: 1200px;
     }
-    
+    .minu-warper{
+  display: grid;
+  grid-template-columns: 2fr 1fr;  
+  gap: 30px;
+  align-items: start;
+}
     .menu-grid{
         display: grid;
          grid-template-columns: repeat(3, 1fr) ;
          gap: 20px;
     }
     .cart-section{
-
+    margin-top: 2px;
     position: sticky;
-    top: 20px; 
+    top: 10px; 
      height: fit-content; 
     }
     .add-btn{
-        padding: 10px;
+        padding: 10px ;
         transform: translateX(-30%);
+        width: 60%;
     }
     .desert-name{
         margin-top: 40px;
     }
+    
 }
    
